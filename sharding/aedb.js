@@ -9,10 +9,10 @@ app.use(express.json())
 
 app.post('/:key', (req, res) => {
     const {key} = req.params
-    console.lof(`Storing data at key ${key}.`)
+    console.log(`Storing data at key ${key}.`)
     const destinationFile = `${DATA_DIR}/${key}`
     fs.writeFileSync(destinationFile, req.body.data)
-    res.send
+    res.send()
 })
 app.get('/:key', (req, res) => {
     const {key} = req.params;
