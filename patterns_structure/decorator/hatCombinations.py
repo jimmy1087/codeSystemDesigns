@@ -1,3 +1,8 @@
+#########################################################
+# To combine classes in a single same type Object
+# Use Decorators that inherit from same base class
+# And that have a private property of the base class, to whom it will add or modify attributes.
+#########################################################
 from abc import ABC
 # Interface
 class IHat(ABC):
